@@ -1,0 +1,49 @@
+/* header.css */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem var(--spacing-md);
+  }
+  
+  .nav__logo {
+    height: 50px;
+    transition: var(--transition-smooth);
+  }
+  
+  .nav__logo:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Menú escritorio */
+  @media (min-width: 769px) {
+    .nav__menu {
+      display: flex;
+      gap: var(--spacing-md);
+      background: rgba(255, 255, 255, 0.5);
+      padding: 0.5rem var(--spacing-md);
+      border-radius: var(--border-radius-full);
+    }
+  
+    .nav__link {
+      color: var(--dark);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 0.5rem 1rem;
+      border-radius: var(--border-radius-full);
+      transition: var(--transition-smooth);
+    }
+  
+    .nav__link:hover {
+      background: var(--primary);
+      color: var(--light);
+    }
+  
+    .nav__toggle,
+    .nav__close,
+    .nav__menu-logo,
+    .nav__menu-description {
+      display: none;
+    }
+  }

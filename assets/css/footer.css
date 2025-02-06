@@ -1,0 +1,208 @@
+/* footer.css */
+.footer {
+  background: #1a1a1a;
+  color: #fff;
+  padding: var(--spacing-lg) 0;
+}
+
+.footer__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-lg);
+}
+
+/* Sección del logo */
+.footer__brand {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.footer__logo-icon {
+  width: 40px;
+  height: 40px;
+  color: var(--primary);
+}
+
+.footer__logo-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.footer__description {
+  color: #888;
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+/* Sección del mapa del sitio */
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.footer__title {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+}
+
+.footer__links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem 2rem; /* 1rem entre filas, 2rem entre columnas */
+}
+
+.footer__link {
+  color: #888;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 0.9rem;
+  white-space: nowrap; /* Evita que los enlaces se rompan */
+}
+
+.footer__link:hover {
+  color: var(--primary);
+}
+
+/* Sección de suscripción */
+.footer__subscribe {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.footer__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.footer__input {
+  padding: 0.8rem 1rem;
+  border: 1px solid #333;
+  background: #222;
+  color: #fff;
+  border-radius: var(--border-radius-sm);
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.footer__input:focus {
+  border-color: var(--primary);
+}
+
+.footer__submit {
+  padding: 0.8rem;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: var(--border-radius-sm);
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.footer__submit:hover {
+  background: var(--primary-dark);
+}
+
+/* Botón de WhatsApp */
+.footer__whatsapp {
+  position: fixed; /* Volvemos a hacerlo flotante */
+  bottom: var(--spacing-md);
+  left: var(--spacing-md);
+  background: #25d366;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: var(--border-radius-full);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.footer__whatsapp:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(37, 211, 102, 0.4);
+  background: #22c15e;
+}
+
+.footer__whatsapp-icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Copyright */
+.footer__bottom {
+  margin-top: var(--spacing-lg);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid #333;
+  text-align: center;
+  color: #666;
+  font-size: 0.8rem;
+}
+
+.footer__bottom a {
+  color: #888;
+  text-decoration: none;
+}
+
+.footer__bottom a:hover {
+  color: var(--primary);
+}
+
+/* Ajuste responsivo */
+@media (max-width: 480px) {
+  .footer__links {
+    grid-template-columns: 1fr; /* Una columna en pantallas muy pequeñas */
+    gap: 0.5rem;
+  }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .footer__container {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .footer__whatsapp {
+    bottom: var(--spacing-sm);
+    left: var(--spacing-sm);
+    padding: 0.6rem 1rem;
+  }
+}
+
+/* Animación de pulso para el botón */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+.footer__whatsapp {
+  animation: pulse 2s infinite;
+}
