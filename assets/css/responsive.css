@@ -1,0 +1,99 @@
+/* Breakpoints principales */
+/* @media (max-width: 1200px) {
+    .header {
+      width: calc(100% - var(--spacing-md) * 2);
+    }
+  
+    .hero {
+      width: 95%;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .nav__menu {
+      padding: 0.4rem var(--spacing-sm);
+      gap: var(--spacing-sm);
+    }
+  
+    .nav__link {
+      font-size: 0.85rem;
+      padding: 0.4rem 0.8rem;
+    }
+  
+    .hero__title {
+      font-size: clamp(2rem, 6vw, 3rem);
+    }
+  
+    .hero__description {
+      font-size: clamp(1rem, 2.5vw, 1.4rem);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero {
+      height: 70vh;
+      margin: calc(80px + var(--spacing-sm)) auto var(--spacing-sm);
+    }
+  
+    .hero__buttons {
+      flex-direction: column;
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  
+    .btn {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .hero__indicator {
+      width: 2rem;
+      height: 3px;
+    }
+  
+    .hero__indicator:hover,
+    .hero__indicator.active {
+      width: 3rem;
+      height: 4px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero {
+      height: 60vh;
+      border-radius: var(--border-radius-md);
+    }
+  
+    .hero__title {
+      font-size: clamp(1.8rem, 5vw, 2.5rem);
+    }
+  
+    .hero__description {
+      font-size: clamp(0.9rem, 2vw, 1.1rem);
+    }
+  
+    .hero__indicator {
+      width: 1.5rem;
+    }
+  
+    .hero__indicator.active {
+      width: 2.5rem;
+    }
+  } */
+  
+  /* Ajuste para pantallas muy grandes */
+  /* @media (min-width: 1600px) {
+    .hero {
+      max-width: 1800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  } */
+  
+  /* Orientación landscape en móviles */
+  /* @media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+      height: 100vh;
+    }
+  } */
