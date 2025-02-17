@@ -5,6 +5,7 @@
   position: fixed;
   top: var(--spacing-xs);
   left: 50%;
+  background: rgba(255, 255, 255, 0.8);
   transform: translateX(-50%);
   width: calc(100% - var(--spacing-lg) * 2);
   max-width: 1200px;
@@ -44,9 +45,8 @@
 .nav__menu {
   display: flex;
   gap: var(--spacing-md);
-  background: rgba(255, 255, 255, 0.5);
-  padding: 0.5rem var(--spacing-md);
-  border-radius: var(--border-radius-full);
+  position: relative;
+  z-index: 2;
   transition: var(--transition-smooth);
 }
 
@@ -54,13 +54,10 @@
   color: var(--dark);
   text-decoration: none;
   font-weight: 600;
-  font-size: 0.95rem;
-  letter-spacing: 0.5px;
   padding: 0.5rem 1rem;
-  border-radius: var(--border-radius-full);
-  transition: var(--transition-smooth);
   position: relative;
-  z-index: 1;
+  transition: color 0.3s ease;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
 }
 
 .nav__link::before {
@@ -88,7 +85,7 @@
 }
 
 /* Estilos para dispositivos móviles */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .header {
     width: calc(100% - var(--spacing-sm) * 2);
     top: var(--spacing-xs);
