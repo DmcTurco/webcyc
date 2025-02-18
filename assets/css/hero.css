@@ -2,13 +2,13 @@
 .hero {
     position: relative;
     height: 85vh;
-    max-height: 800px;
+    max-height: 1000px;
     overflow: hidden;
     margin: calc(var(--spacing-lg) + 60px) auto var(--spacing-md);
     border-radius: var(--border-radius-lg);
     box-shadow: var(--shadow-lg);
     width: 90%;
-    max-width: 1200px;
+    max-width: 1800px;
   }
   
   .hero__slider {
