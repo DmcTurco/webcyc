@@ -77,7 +77,7 @@
 }
 
 .about__btn:hover {
-  background: var(--gradient-primary);
+  background: var(--primary);
   color: var(--light);
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);

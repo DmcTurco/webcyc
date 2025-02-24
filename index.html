@@ -15,15 +15,24 @@
     <header class="header">
       <nav class="nav">
         <img src="assets/img/logo2.png" alt="C&C PROENERG" class="nav__logo" />
+
+        <!-- Es importante que el botón hamburguesa esté antes de nav__menu en modo móvil -->
         <div class="nav__toggle">
           <span></span>
           <span></span>
           <span></span>
         </div>
+
         <div class="nav__menu">
           <a href="#inicio" class="nav__link">INICIO</a>
           <a href="#nosotros" class="nav__link">QUIENES SOMOS</a>
-          <a href="#servicios" class="nav__link">SERVICIOS</a>
+          <div class="dropdown">
+            <a href="#servicios" class="nav__link">SERVICIOS DESTACADOS</a>
+            <div class="dropdown-content">
+              <a href="#proyectos-electricos">PROYECTOS ELECTRICOS</a>
+              <a href="#gas-natural">GAS NATURAL</a>
+            </div>
+          </div>
           <a href="#contacto" class="nav__link">CONTACTO</a>
         </div>
       </nav>

@@ -123,17 +123,17 @@
 .footer__whatsapp {
   position: fixed; /* Volvemos a hacerlo flotante */
   bottom: var(--spacing-md);
-  left: var(--spacing-md);
-  background: #25d366;
+  left: var(--spacing-md);  
+  background: var(--primary);
   color: white;
-  padding: 0.8rem 1.5rem;
+  padding: 0.5rem 1rem;
   border-radius: var(--border-radius-full);
   text-decoration: none;
   display: flex;
   align-items: center;
   gap: 0.8rem;
   font-weight: 600;
-  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+  box-shadow: 0 8px 24px rgba(44, 10, 194, 0.3);
   transition: all 0.3s ease;
   z-index: 1000;
 }
