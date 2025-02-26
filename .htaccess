@@ -1,0 +1,35 @@
+# Activar el motor de reescritura
+RewriteEngine On
+
+# Configuración base
+# Descomentar la siguiente línea si tu sitio está en un subdirectorio
+# RewriteBase /cycweb/
+
+# No aplicar reglas a archivos o directorios existentes
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Regla para la página principal
+RewriteRule ^$ index.php [L]
+
+# Reescribir URLs sin extensión a archivos .php
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+# Reescribir URLs para directorios (por ejemplo, para páginas en /pages/)
+RewriteRule ^([^/]+)/([^\.]+)$ $1/$2.php [NC,L]
+
+# Configuración para ocultar index.php
+# Redirigir /index.php a /
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
+RewriteRule ^index\.php$ / [R=301,L]
+
+# Redirigir /páginas/archivo.php a /páginas/archivo
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /(.+)\.php\ HTTP/
+RewriteRule ^(.+)\.php$ /$1 [R=301,L]
+
+# Configuración adicional
+# Prevenir listado de directorios
+Options -Indexes
+
+# Manejo de errores personalizados (opcional)
+ErrorDocument 404 /pages/404.php
