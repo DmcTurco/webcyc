@@ -49,7 +49,7 @@
   left: 0;
   width: 60px;
   height: 4px;
-  background: var(--gradient-primary);
+  background: var(--primary);
   border-radius: var(--border-radius-full);
 }
 
