@@ -202,7 +202,7 @@
 }
 
 .about__gallery-arrow::before {
-  content: '';
+  content: "";
   width: 10px;
   height: 10px;
   border-top: 2px solid white;
@@ -240,29 +240,283 @@
   left: -100px;
 }
 
-/* Media Queries */
+/* Media Queries - Responsive */
+@media (max-width: 1200px) {
+  .about__container {
+    max-width: 95%;
+    gap: var(--spacing-md);
+  }
+  
+  .about__gallery {
+    height: 350px;
+  }
+}
+
 @media (max-width: 992px) {
+  .about {
+    padding: var(--spacing-md) 0;
+  }
+  
   .about__container {
     grid-template-columns: 1fr;
+    gap: var(--spacing-md);
   }
-
+  
+  .about__content {
+    order: 2;
+  }
+  
   .about__gallery {
-    order: -1;
-    margin-bottom: var(--spacing-md);
+    order: 1;
+    height: 400px;
+  }
+  
+  .about__subtitle {
+    font-size: 1rem;
+  }
+  
+  .about__description {
+    font-size: 1rem;
+  }
+  
+  .about__btn {
+    padding: 8px 20px;
+    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 768px) {
   .about__gallery {
+    height: 350px;
+  }
+  
+  .about__container {
+    padding: var(--spacing-sm);
+    gap: var(--spacing-md);
+  }
+  
+  .about__title {
+    font-size: clamp(1.8rem, 3vw, 2.2rem);
+  }
+  
+  .about__gallery-arrow {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .about__gallery-controls {
+    bottom: var(--spacing-sm);
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about {
+    padding: var(--spacing-sm) 0;
+  }
+  
+  .about__container {
+    gap: var(--spacing-sm);
+  }
+  
+  .about__gallery {
     height: 300px;
     grid-template-columns: 1fr;
   }
-
+  
   .about__slide-group {
     grid-template-columns: 1fr;
   }
+  
+  .about__title {
+    font-size: 1.6rem;
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .about__title::after {
+    width: 50px;
+    height: 3px;
+  }
+  
+  .about__subtitle {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+  }
+  
+  .about__description {
+    line-height: 1.6;
+    margin-bottom: var(--spacing-sm);
+    font-size: 0.95rem;
+  }
+  
+  .about__btn {
+    padding: 6px 16px;
+    font-size: 0.8rem;
+  }
+  
+  .about__gallery-dot {
+    width: 8px;
+    height: 8px;
+  }
+  
+  .about__gallery-dot.active {
+    width: 20px;
+  }
+  
+  .about__gallery-arrow {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .about__gallery-arrow::before {
+    width: 8px;
+    height: 8px;
+  }
+  
+  .about__dots {
+    width: 150px;
+    height: 150px;
+    background-size: 15px 15px;
+  }
+}
 
-  .about__image:nth-child(2) {
-    display: none;
+@media (max-width: 480px) {
+  .about__gallery {
+    height: 250px;
+  }
+  
+  .about__title {
+    font-size: 1.5rem;
+  }
+  
+  .about__gallery-controls {
+    bottom: 10px;
+  }
+  
+  .about__gallery-arrow--prev {
+    left: 10px;
+  }
+  
+  .about__gallery-arrow--next {
+    right: 10px;
+  }
+}
+
+/* Ajustes específicos para pantallas pequeñas */
+@media (max-width: 380px) {
+  .about__gallery {
+    height: 220px;
+  }
+  
+  .about__container {
+    padding: 15px;
+  }
+  
+  .about__title {
+    font-size: 1.4rem;
+  }
+  
+  .about__gallery-arrow {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .about__gallery-arrow::before {
+    width: 7px;
+    height: 7px;
+  }
+}
+
+/* Para asegurarnos que los elementos de la parte de Quienes Somos también sean responsive */
+@media (max-width: 1024px) {
+  .about-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .about-block {
+    flex: 0 0 45%;
+  }
+
+  .mission-vision__container {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    height: 250px;
+  }
+
+  .about-hero__title {
+    font-size: 1.8rem;
+  }
+
+  .about-container {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .about-block {
+    flex: 1 0 100%;
+    min-width: 100%;
+  }
+
+  .mission-vision__item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .mission-vision__title::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .about-title {
+    font-size: 1.7rem;
+  }
+
+  .about-subtitle {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero {
+    height: 200px;
+  }
+
+  .about-hero__title {
+    font-size: 1.5rem;
+  }
+
+  .about-section {
+    padding: 40px 0;
+  }
+
+  .about-header {
+    margin-bottom: 25px;
+  }
+
+  .about-container {
+    gap: 20px;
+  }
+
+  .mission-vision {
+    padding: 40px 0;
+  }
+
+  .mission-vision__content {
+    gap: 20px;
+  }
+
+  .mission-vision__icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .mission-vision__vision-points p {
+    margin-bottom: 8px;
   }
 }

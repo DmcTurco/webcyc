@@ -4,7 +4,7 @@
       <div class="footer__brand">
         <div class="footer__logo">
           <img
-            src="../assets/img/fav-footer-cyc.png"
+            src="<?php echo asset('img/fav-footer-cyc.png'); ?>"
             alt="Logo"
             class="footer__logo-icon" />
           <span class="footer__logo-text">C&C PROENERG</span>
