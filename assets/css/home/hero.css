@@ -1,7 +1,7 @@
 /* Hero Section - Carrusel */
 .hero {
   position: relative;
-  height: 85vh;
+  height: 65vh;
   max-height: 1000px;
   overflow: hidden;
   margin: calc(var(--spacing-lg) + 60px) auto var(--spacing-md);

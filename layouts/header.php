@@ -25,10 +25,10 @@ if (!defined('BASE_URL')) {
       <a href="<?php echo url('pages/about.php'); ?>" class="nav__link <?php echo is_active('about') ? 'active' : ''; ?>">QUIENES SOMOS</a>
       <div class="dropdown">
         <a href="<?php echo url('pages/service.php'); ?>" class="nav__link <?php echo is_active('service') ? 'active' : ''; ?>">SERVICIOS DESTACADOS</a>
-        <!-- <div class="dropdown-content">
+        <div class="dropdown-content">
           <a href="<?php echo url('pages/content/proyectos-electricos.php'); ?>">PROYECTOS ELECTRICOS</a>
           <a href="<?php echo url('pages/content/gas-natural.php'); ?>">GAS NATURAL</a>
-        </div> -->
+        </div>
       </div>
       <a href="<?php echo url('pages/contact.php'); ?>" class="nav__link <?php echo is_active('contacto') ? 'active' : ''; ?>">CONTACTO</a>
     </div>

@@ -45,42 +45,10 @@
   margin-right: 10px;
 }
 
-/* Search Box */
-.search-box {
-  margin-bottom: 30px;
-}
-
-.search-box__title {
-  color: var(--dark);
-  font-size: 1.2rem;
-  margin-bottom: 15px;
-  padding-bottom: 10px;
-  border-bottom: 2px solid var(--primary);
-}
-
-.search-box__form {
-  display: flex;
-}
-
-.search-box__input {
-  flex: 1;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-right: none;
-}
-
-.search-box__button {
-  background-color: var(--primary);
-  color: white;
-  border: none;
-  padding: 0 15px;
-  cursor: pointer;
-}
-
 /* Hero Section */
 .services-hero {
   position: relative;
-  height: 40vh;
+  height: 30vh;
   max-height: 1000px;
   overflow: hidden;
   margin: calc(var(--spacing-lg) + 60px) auto var(--spacing-md);
@@ -120,9 +88,9 @@
   height: 100%;
   background-image: linear-gradient(
     90deg,
-    rgba(2, 0, 36, 0.13) 0%,
+    rgba(2, 0, 36, 0.13) -20%,
     rgb(5, 27, 64) 50%,
-    rgba(1, 20, 24, 0) 85%
+    rgba(1, 20, 24, 0) 140%
   );
   z-index: 1;
 }
@@ -163,11 +131,114 @@
 /* Main Content Sections */
 .services-section {
   padding: var(--spacing-lg) 0;
-  background: var(--light);
+  background: var(--gray);
 }
 
 .services-section:nth-child(even) {
   background: var(--gray);
+}
+
+
+/* Opción 1: Diseño con línea decorativa */
+
+.services__grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.service-card {
+  background: var(--light);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.service-card__image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.service-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-card__image img {
+  transform: scale(1.05);
+}
+
+.service-card__content {
+  padding: var(--spacing-md);
+  position: relative;
+}
+
+.service-card__icon {
+  width: 60px;
+  height: 60px;
+  background: var(--light);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -30px;
+  left: var(--spacing-md);
+  box-shadow: var(--shadow-md);
+}
+
+.service-card__icon img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+
+.service-card__title {
+  font-size: 1.25rem;
+  color: var(--dark);
+  margin: var(--spacing-md) 0 var(--spacing-sm);
+  font-weight: 600;
+}
+
+.service-card__description {
+  color: var(--secondary);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-md);
+  font-size: 0.95rem;
+}
+
+.service-card__link {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: gap 0.3s ease;
+}
+
+.service-card__link:hover {
+  gap: 0.8rem;
+}
+
+.service-card__link::after {
+  content: "+";
+  font-size: 1.2rem;
 }
 
 /* Main content layout with sidebar */
@@ -472,6 +543,156 @@
   color: #d32f2f;
   background-color: #ffebee;
   border-radius: var(--border-radius-md);
+}
+
+
+/* Estilos mejorados para el formulario de cotización en la barra lateral */
+.cotizar-box {
+  background: linear-gradient(to bottom, #ffffff, #f5f5f5);
+  padding: 25px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.cotizar-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background-color: var(--primary, #4CAF50);
+}
+
+.cotizar-title {
+  color: var(--primary-dark, #00396B);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.cotizar-title::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: var(--primary, #4CAF50);
+  margin: 10px auto 0;
+}
+
+.cotizar-box .form-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.cotizar-box input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  background-color: #ffffff;
+}
+
+.cotizar-box input:focus {
+  border-color: var(--primary, #4CAF50);
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
+  outline: none;
+}
+
+.cotizar-box input::placeholder {
+  color: #aaaaaa;
+  transition: color 0.3s ease;
+}
+
+.cotizar-box input:focus::placeholder {
+  color: #bbbbbb;
+}
+
+.btn-enviar {
+  width: 100%;
+  background: var(--primary-dark, #00396B);
+  color: white;
+  border: none;
+  padding: 14px;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+  margin-top: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-enviar:hover {
+  background-color: var(--primary, #4CAF50);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.btn-enviar:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Efecto focus para accesibilidad */
+.btn-enviar:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.3);
+}
+
+/* Añadir íconos a los campos si deseas (opcional) */
+.cotizar-box .form-group.nombre-group::before,
+.cotizar-box .form-group.email-group::before,
+.cotizar-box .form-group.telefono-group::before {
+  font-family: "Font Awesome 5 Free"; /* Asegúrate de que tienes FontAwesome cargado */
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
+  z-index: 1;
+}
+
+/* Si deseas usar iconos, elimina los comentarios de estas líneas */
+/*
+.cotizar-box .form-group.nombre-group::before {
+  content: "\f007"; /* icono de usuario */
+/*}*/
+
+/*
+.cotizar-box .form-group.email-group::before {
+  content: "\f0e0"; /* icono de email */
+/*}*/
+
+/*
+.cotizar-box .form-group.telefono-group::before {
+  content: "\f095"; /* icono de teléfono */
+/*}*/
+
+/* Si usas iconos, ajusta el padding de los inputs */
+/*
+.cotizar-box .form-group.nombre-group input,
+.cotizar-box .form-group.email-group input,
+.cotizar-box .form-group.telefono-group input {
+  padding-left: 35px;
+}*/
+
+/* Efecto hover al contenedor */
+.cotizar-box:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
 }
 
 /* Responsive adjustments */

@@ -14,7 +14,7 @@ ob_start();
     <div class="services-hero__slider">
         <div
             class="services-hero__slide active"
-            style="background-image: url('<?php echo asset('img/banner-cycproenerg-servicios.png'); ?>')">
+            style="background-image: url('<?php echo asset('img/bg2-slider2.jpg'); ?>')">
             <div class="services-hero__content">
                 <h1 class="services-hero__title">SERVICIOS</h1>
                 <div class="services-breadcrumbs">
@@ -25,92 +25,59 @@ ob_start();
     </div>
 </section>
 
-<!-- Sección de contenido principal con sidebar -->
+
+<!-- Sección de contenido principal -->
 <section class="services-section">
-    <div class="services-layout">
-        <!-- Sidebar -->
-        <aside class="services-sidebar">
-            <!-- Caja de búsqueda -->
-            <div class="search-box">
-                <h3 class="search-box__title">Buscar</h3>
-                <form class="search-box__form" action="<?php echo url('search.php'); ?>" method="GET">
-                    <input type="text" name="q" class="search-box__input" placeholder="">
-                    <button type="submit" class="search-box__button">
-                        <i class="fa fa-search"></i>
-                    </button>
-                </form>
+    <!-- <div class="services__header--style1">
+        <span class="services__subtitle--style1">INGENIERÍA Y PROYECTOS</span>
+        <h2 class="services__title--style1">SERVICIOS</h2>
+    </div> -->
+    <div class="services__grid">
+        <!-- Servicio 3 - Proyectos Eléctricos -->
+        <div class="service-card">
+            <div class="service-card__image">
+                <img
+                    src="<?php echo asset('img/cycproenerg-servicio-03.jpg'); ?>"
+                    alt="Proyectos eléctricos" />
             </div>
-
-            <!-- Menú de servicios destacados -->
-            <h3 class="services-sidebar__title">Servicios Destacados</h3>
-            <ul class="services-sidebar__menu">
-                <li class="services-sidebar__item">
-                    <a href="javascript:void(0);" class="services-sidebar__link active" data-service="proyectos-electricos">
-                        <i class="fa fa-plus"></i> PROYECTOS ELÉCTRICOS DE BAJA Y MEDIA TENSIÓN
-                    </a>
-                </li>
-                <li class="services-sidebar__item">
-                    <a href="javascript:void(0);" class="services-sidebar__link" data-service="gas-natural">
-                        <i class="fa fa-plus"></i> GAS NATURAL
-                    </a>
-                </li>
-            </ul>
-        </aside>
-
-        <!-- Contenido principal -->
-        <div class="services-content" id="services-content">
-            <!-- El contenido se cargará dinámicamente con AJAX -->
-            <!-- Contenido inicial (proyectos eléctricos) -->
-            <div id="service-proyectos-electricos" class="service-content active">
-                <div class="loading-spinner">Cargando...</div>
+            <div class="service-card__content">
+                <div class="service-card__icon">
+                    <img src="<?php echo asset('img/icono3.png'); ?>" alt="Icono eléctrico" />
+                </div>
+                <h3 class="service-card__title">PROYECTOS ELÉCTRICOS</h3>
+                <p class="service-card__description">
+                    Desarrollada por un staff de ingenieros experimentados, con
+                    sólidos conocimientos en la materia y normativa vigente (CNE,
+                    RNE, NTP).
+                </p>
+                <a href="<?php echo url('pages/content/proyectos-electricos.php'); ?>" class="service-card__link">VER MÁS</a>
             </div>
-
-            <!-- Contenido de Gas Natural (inicialmente oculto) -->
-            <div id="service-gas-natural" class="service-content">
-                <div class="loading-spinner">Cargando...</div>
-            </div>
-
         </div>
+
+        <!-- Servicio 4 - Gas Natural -->
+        <div class="service-card">
+            <div class="service-card__image">
+                <img
+                    src="<?php echo asset('img/cycproenerg-servicio-04.jpg'); ?>"
+                    alt="Gas natural" />
+            </div>
+            <div class="service-card__content">
+                <div class="service-card__icon">
+                    <img src="<?php echo asset('img/icono4.png'); ?>" alt="Icono gas" />
+                </div>
+                <h3 class="service-card__title">GAS NATURAL</h3>
+                <p class="service-card__description">
+                    Es la fuente de energía más limpia, menos contaminante y con
+                    menor contenido de carbono de todos los combustibles fósiles.
+                </p>
+                <a href="<?php echo url('pages/content/gas-natural.php'); ?>" class="service-card__link">VER MÁS</a>
+            </div>
+        </div>
+
     </div>
 </section>
 
-<!-- Sección de Contacto/Cotizar -->
-<!-- <section class="services-contact">
-    <div class="services-contact__container">
-        <div class="services-contact__info">
-            <h3 class="services-contact__title">Información</h3>
-            <h2 class="services-contact__cta">COTIZAR</h2>
-        </div>
-        <div class="services-contact__form">
-            <form action="<?php echo url('process-quote.php'); ?>" method="POST">
-                <div class="form-group">
-                    <input type="text" name="nombre" placeholder="Nombre (*)" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="E-mail (*)" required>
-                </div>
-                <div class="form-group">
-                    <input type="tel" name="telefono" placeholder="Teléfono (*)" required>
-                </div>
-                <div class="form-group">
-                    <button type="submit" class="btn-submit">ENVIAR</button>
-                </div>
-            </form>
-        </div>
-    </div>
-</section> -->
-
-<!-- Sección de Redes Sociales -->
-<!-- <section class="services-social">
-    <div class="services-social__container">
-        <h3 class="services-social__title">Síguenos</h3>
-        <p class="services-social__text">Para mayor información síguenos en nuestras redes sociales:</p>
-        <div class="services-social__icons">
-            <a href="#" class="social-icon"><i class="fa fa-facebook"></i></a>
-            <a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
-        </div>
-    </div>
-</section> -->
+</section>
 
 <?php
 // Capturar el contenido en la variable $content

@@ -154,7 +154,7 @@
           sólidos conocimientos en la materia y normativa vigente (CNE,
           RNE, NTP).
         </p>
-        <a href="<?php echo url('pages/servicios.php'); ?>#proyectos-electricos" class="service-card__link">VER MÁS</a>
+        <a href="<?php echo url('pages/content/proyectos-electricos.php'); ?>" class="service-card__link">VER MÁS</a>
       </div>
     </div>
 
@@ -175,7 +175,7 @@
           Es la fuente de energía más limpia, menos contaminante y con
           menor contenido de carbono de todos los combustibles fósiles.
         </p>
-        <a href="<?php echo url('pages/servicios.php'); ?>#gas-natural" class="service-card__link">VER MÁS</a>
+        <a href="<?php echo url('pages/content/gas-natural.php'); ?>" class="service-card__link">VER MÁS</a>
       </div>
     </div>
   </div>
