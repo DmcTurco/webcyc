@@ -31,7 +31,7 @@ ob_start();
 <section class="about-section">
     <div class="about-header">
         <span class="about-subtitle">INGENIERÍA Y PROYECTOS</span>
-        <h2 class="about-title">SERVICIOS</h2>
+        <h2 class="about-title">C&C PROENERG</h2>
     </div>
 
     <div class="about-container">

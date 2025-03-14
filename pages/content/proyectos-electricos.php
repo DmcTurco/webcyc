@@ -95,7 +95,7 @@ ob_start();
             </div>
         </aside>
 
-        <div class="services-content">
+        <!-- <div class="services-content">
             <div class="services-header">
                 <h2 class="services-title">PROYECTOS ELÉCTRICOS DE BAJA Y MEDIA TENSIÓN</h2>
             </div>
@@ -124,18 +124,18 @@ ob_start();
             </div>
 
 
-        </div>
+        </div> -->
         <!-- Contenido principal -->
-        <!-- <div class="services-content">
+        <div class="services-content">
             <div class="services-header">
                 <h2 class="services-title">PROYECTOS ELÉCTRICOS DE BAJA Y MEDIA TENSIÓN</h2>
             </div>
             <div class="services-description">
                 <p>Desarrollada por un staff de ingenieros experimentados, con sólidos conocimientos en la materia y normativa vigente (CNE, RNE, NTP somos especialistas en:</p>
-            </div> -->
+            </div>
 
         <!-- Diseño de Ingeniería -->
-        <!-- <div class="services-block">
+        <div class="services-block">
                 <div class="services-block-content">
                     <h3 class="services-block-title">
                         <i class="fa fa-bolt"></i> DISEÑO DE INGENIERÍA EN BAJA Y MEDIA TENSIÓN
@@ -150,10 +150,10 @@ ob_start();
                 <div class="services-image">
                     <img src="<?php echo asset('img/cycproenerg-servicio3-img1.png'); ?>" alt="Diseño de Ingeniería Eléctrica">
                 </div>
-            </div> -->
+            </div>
 
         <!-- Ejecución de Proyectos -->
-        <!-- <div class="services-block">
+        <div class="services-block">
                 <div class="services-image">
                     <img src="<?php echo asset('img/cycproenerg-servicio3-img2.png'); ?>" alt="Ejecución de Proyectos Eléctricos">
                 </div>
@@ -168,10 +168,10 @@ ob_start();
                         <li>Implementación de sistema de puesta a tierra con los valores aceptadas por la norma vigente.</li>
                     </ul>
                 </div>
-            </div> -->
+            </div>
 
         <!-- Mantenimiento -->
-        <!-- <div class="services-block">
+        <div class="services-block">
                 <div class="services-block-content">
                     <h3 class="services-block-title">
                         <i class="fa fa-wrench"></i> MANTENIMIENTO
@@ -186,7 +186,7 @@ ob_start();
                 </div>
             </div>
 
-        </div> -->
+        </div>
 
     </div>
 </section>

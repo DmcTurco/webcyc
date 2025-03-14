@@ -16,7 +16,7 @@
                     Soluciones integrales en ingeniería y proyectos eléctricos
                 </p>
                 <div class="hero__buttons">
-                    <a href="<?php echo url('pages/servicios.php'); ?>" class="btn btn--primary">Nuestros Servicios</a>
+                    <a href="<?php echo url('pages/service.php'); ?>" class="btn btn--primary">Nuestros Servicios</a>
                     <a href="<?php echo url('pages/contacto.php'); ?>" class="btn btn--secondary">Contáctanos</a>
                 </div>
             </div>
@@ -31,7 +31,7 @@
                     Más de 10 años brindando soluciones eléctricas de alta calidad
                 </p>
                 <div class="hero__buttons">
-                    <a href="<?php echo url('pages/servicios.php'); ?>" class="btn btn--primary">Nuestros Servicios</a>
+                    <a href="<?php echo url('pages/service.php'); ?>" class="btn btn--primary">Nuestros Servicios</a>
                     <a href="<?php echo url('pages/contacto.php'); ?>" class="btn btn--secondary">Contáctanos</a>
                 </div>
             </div>
