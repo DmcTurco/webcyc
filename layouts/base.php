@@ -12,7 +12,7 @@
 
 // Incluir configuración si no se ha incluido ya
 if (!defined('BASE_URL')) {
-    include_once $_SERVER['DOCUMENT_ROOT'] . '/cycweb/config/config.php';
+    include_once $_SERVER['DOCUMENT_ROOT'] . '/webcyc/config/config.php';
 }
 
 // Valores por defecto

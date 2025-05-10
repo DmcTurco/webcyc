@@ -1,6 +1,6 @@
 <?php
 // Incluir configuración
-include_once $_SERVER['DOCUMENT_ROOT'] . '/cycweb/config/config.php';
+include_once $_SERVER['DOCUMENT_ROOT'] . '/webcyc/config/config.php';
 // Definir variables para la plantilla base
 $page_title = 'Servicios';
 $page_description = 'Servicios especializados por C&C PROENERG.';
@@ -19,7 +19,7 @@ ob_start();
             <div class="services-hero__content">
                 <h1 class="services-hero__title">Gas Natural</h1>
                 <div class="services-breadcrumbs">
-                    <a href="<?php echo url('index.php'); ?>">HOME</a> / <span>PGas Natural</span>
+                    <a href="<?php echo url('index.php'); ?>">HOME</a> / <span>Gas Natural</span>
                 </div>
             </div>
         </div>

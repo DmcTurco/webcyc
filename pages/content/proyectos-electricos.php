@@ -1,6 +1,6 @@
 <?php
 // Incluir configuración
-include_once $_SERVER['DOCUMENT_ROOT'] . '/cycweb/config/config.php';
+include_once $_SERVER['DOCUMENT_ROOT'] . '/webcyc/config/config.php';
 // Definir variables para la plantilla base
 $page_title = 'Servicios';
 $page_description = 'Servicios especializados por C&C PROENERG.';

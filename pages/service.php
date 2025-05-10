@@ -1,6 +1,6 @@
 <?php
 // Incluir configuración
-include_once $_SERVER['DOCUMENT_ROOT'] . '/cycweb/config/config.php';
+include_once $_SERVER['DOCUMENT_ROOT'] . '/webcyc/config/config.php';
 // Definir variables para la plantilla base
 $page_title = 'Servicios';
 $page_description = 'Servicios especializados por C&C PROENERG.';
@@ -33,28 +33,8 @@ ob_start();
         <h2 class="services__title--style1">SERVICIOS</h2>
     </div> -->
     <div class="services__grid">
-        <!-- Servicio 3 - Proyectos Eléctricos -->
-        <div class="service-card">
-            <div class="service-card__image">
-                <img
-                    src="<?php echo asset('img/cycproenerg-servicio-03.jpg'); ?>"
-                    alt="Proyectos eléctricos" />
-            </div>
-            <div class="service-card__content">
-                <div class="service-card__icon">
-                    <img src="<?php echo asset('img/icono3.png'); ?>" alt="Icono eléctrico" />
-                </div>
-                <h3 class="service-card__title">PROYECTOS ELÉCTRICOS</h3>
-                <p class="service-card__description">
-                    Desarrollada por un staff de ingenieros experimentados, con
-                    sólidos conocimientos en la materia y normativa vigente (CNE,
-                    RNE, NTP).
-                </p>
-                <a href="<?php echo url('pages/content/proyectos-electricos.php'); ?>" class="service-card__link">VER MÁS</a>
-            </div>
-        </div>
 
-        <!-- Servicio 4 - Gas Natural -->
+        <!-- Servicio 1 - Gas Natural -->
         <div class="service-card">
             <div class="service-card__image">
                 <img
@@ -73,6 +53,50 @@ ob_start();
                 <a href="<?php echo url('pages/content/gas-natural.php'); ?>" class="service-card__link">VER MÁS</a>
             </div>
         </div>
+
+        <!-- Servicio 2 - Proyectos Eléctricos -->
+        <div class="service-card">
+            <div class="service-card__image">
+                <img
+                    src="<?php echo asset('img/cycproenerg-servicio-03.jpg'); ?>"
+                    alt="Proyectos eléctricos" />
+            </div>
+            <div class="service-card__content">
+                <div class="service-card__icon">
+                    <img src="<?php echo asset('img/icono3.png'); ?>" alt="Icono eléctrico" />
+                </div>
+                <h3 class="service-card__title">GAS LIQUIADO DE PRETROLEO</h3>
+                <p class="service-card__description">
+                    Desarrollada por un staff de ingenieros experimentados, con
+                    sólidos conocimientos en la materia y normativa vigente (CNE,
+                    RNE, NTP).
+                </p>
+                <a href="<?php echo url('pages/content/proyectos-electricos.php'); ?>" class="service-card__link">VER MÁS</a>
+            </div>
+        </div>
+
+        <!-- Servicio 3 - Servicios Contraincendia -->
+        <div class="service-card">
+            <div class="service-card__image">
+                <img
+                    src="<?php echo asset('img/cycproenerg-servicio-03.jpg'); ?>"
+                    alt="Proyectos eléctricos" />
+            </div>
+            <div class="service-card__content">
+                <div class="service-card__icon">
+                    <img src="<?php echo asset('img/icono3.png'); ?>" alt="Icono eléctrico" />
+                </div>
+                <h3 class="service-card__title">SISTEMAS CONTRAINCENDIOS</h3>
+                <p class="service-card__description">
+                    Desarrollada por un staff de ingenieros experimentados, con
+                    sólidos conocimientos en la materia y normativa vigente (CNE,
+                    RNE, NTP).
+                </p>
+                <a href="<?php echo url('pages/content/proyectos-electricos.php'); ?>" class="service-card__link">VER MÁS</a>
+            </div>
+        </div>
+
+
 
     </div>
 </section>

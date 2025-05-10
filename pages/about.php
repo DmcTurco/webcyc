@@ -1,6 +1,6 @@
 <?php
 // Incluir configuración
-include_once $_SERVER['DOCUMENT_ROOT'] . '/cycweb/config/config.php';
+include_once $_SERVER['DOCUMENT_ROOT'] . '/webcyc/config/config.php';
 
 // Definir variables para la plantilla base
 $page_title = 'Quienes Somos';
@@ -69,7 +69,11 @@ ob_start();
                 <img src="<?php echo asset('img/mision-i.png'); ?>" alt="Misión" class="mission-vision__icon">
                 <div class="mission-vision__text">
                     <span class="mission-vision__label">MISIÓN</span>
-                    <p class="mission-vision__description">Brindar soluciones integrales de alta calidad, centrándonos en el ahorro energético, conservación del medio ambiente y satisfacción de nuestros clientes antes, durante y después del proyecto.</p>
+                    <p class="mission-vision__description">Brindar soluciones integrales en gas natural y
+                        glp de alta calidad, centrandonos en el ahorro
+                        energetico, conservacion del medio ambiente y
+                        satisfaccion de nuestros clientes antes, durante
+                        y despues del proyecto</p>
                 </div>
             </div>
 
@@ -78,7 +82,7 @@ ob_start();
                 <div class="mission-vision__text">
                     <span class="mission-vision__label">VISIÓN</span>
                     <div class="mission-vision__vision-points">
-                        <p class="mission-vision__description">– Ser una empresa líder reconocida y valorada en el mercado nacional.</p>
+                        <p class="mission-vision__description">– Ser una empresa lider reconocida y valorada en el mercado nacional.</p>
                         <p class="mission-vision__description">– Proveer la mejor experiencia del cliente cada día.</p>
                         <p class="mission-vision__description">– Ofrecer la mejor experiencia de diseño y ejecución en nuestro rubro.</p>
                         <p class="mission-vision__description">– Brindar la oportunidad y Liberar el potencial de cada colaborador.</p>

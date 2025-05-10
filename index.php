@@ -18,7 +18,7 @@ ob_start();
 ?>
 
 <!-- Hero Section -->
-<?php include PAGES_PATH . './home.php'; ?>
+<?php include PAGES_PATH . '/home.php'; ?>
 
 <!-- About Preview Section -->
 <!-- <?php include INCLUDES_PATH . '/home-about.php'; ?> -->

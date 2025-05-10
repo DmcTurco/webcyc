@@ -5,7 +5,7 @@
  */
 
 // URL base del sitio
-define('BASE_URL', '/cycweb/');
+define('BASE_URL', '/webcyc/');
 
 // Título del sitio
 define('SITE_NAME', 'C&C PROENERG');
@@ -16,7 +16,7 @@ define('COMPANY_PHONE', '+51 123 456 789');
 define('COMPANY_ADDRESS', 'Av. Principal 123, Lima, Perú');
 
 // Rutas del sistema
-define('ROOT_PATH', $_SERVER['DOCUMENT_ROOT'] . '/cycweb');
+define('ROOT_PATH', $_SERVER['DOCUMENT_ROOT'] . '/webcyc');
 define('LAYOUTS_PATH', ROOT_PATH . '/layouts');
 define('PAGES_PATH', ROOT_PATH . '/pages');
 define('INCLUDES_PATH', ROOT_PATH . '/includes');

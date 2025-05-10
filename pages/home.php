@@ -5,44 +5,44 @@
  */
 ?>
 <section class="hero">
-    <div class="hero__slider">
-        <!-- Slides -->
-        <div
-            class="hero__slide active"
-            style="background-image: url('<?php echo asset('img/slider-cyc-1.png'); ?>')">
-            <div class="hero__content">
-                <h1 class="hero__title">C&C PROENERG</h1>
-                <p class="hero__description">
-                    Soluciones integrales en ingeniería y proyectos eléctricos
-                </p>
-                <div class="hero__buttons">
-                    <a href="<?php echo url('pages/service.php'); ?>" class="btn btn--primary">Nuestros Servicios</a>
-                    <a href="<?php echo url('pages/contacto.php'); ?>" class="btn btn--secondary">Contáctanos</a>
-                </div>
-            </div>
+  <div class="hero__slider">
+    <!-- Slides -->
+    <div
+      class="hero__slide active"
+      style="background-image: url('<?php echo asset('img/slider-cyc-1.png'); ?>')">
+      <div class="hero__content">
+        <h1 class="hero__title">C&C PROENERG</h1>
+        <p class="hero__description">
+          Soluciones integrales en ingeniería y proyectos eléctricos
+        </p>
+        <div class="hero__buttons">
+          <a href="<?php echo url('pages/service.php'); ?>" class="btn btn--primary">Nuestros Servicios</a>
+          <a href="<?php echo url('pages/contacto.php'); ?>" class="btn btn--secondary">Contáctanos</a>
         </div>
-
-        <div
-            class="hero__slide"
-            style="background-image: url('<?php echo asset('img/slider-cyc-2.png'); ?>')">
-            <div class="hero__content">
-                <h1 class="hero__title">Experiencia y Calidad</h1>
-                <p class="hero__description">
-                    Más de 10 años brindando soluciones eléctricas de alta calidad
-                </p>
-                <div class="hero__buttons">
-                    <a href="<?php echo url('pages/service.php'); ?>" class="btn btn--primary">Nuestros Servicios</a>
-                    <a href="<?php echo url('pages/contacto.php'); ?>" class="btn btn--secondary">Contáctanos</a>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
 
-    <!-- Indicadores del carrusel -->
-    <div class="hero__indicators">
-        <span class="hero__indicator active"></span>
-        <span class="hero__indicator"></span>
+    <div
+      class="hero__slide"
+      style="background-image: url('<?php echo asset('img/slider-cyc-2.png'); ?>')">
+      <div class="hero__content">
+        <h1 class="hero__title">Experiencia y Calidad</h1>
+        <p class="hero__description">
+          Más de 10 años brindando soluciones eléctricas de alta calidad
+        </p>
+        <div class="hero__buttons">
+          <a href="<?php echo url('pages/service.php'); ?>" class="btn btn--primary">Nuestros Servicios</a>
+          <a href="<?php echo url('pages/contacto.php'); ?>" class="btn btn--secondary">Contáctanos</a>
+        </div>
+      </div>
     </div>
+  </div>
+
+  <!-- Indicadores del carrusel -->
+  <div class="hero__indicators">
+    <span class="hero__indicator active"></span>
+    <span class="hero__indicator"></span>
+  </div>
 </section>
 
 <section id="nosotros" class="about">
@@ -66,14 +66,12 @@
         <div class="about__image">
           <img
             src="<?php echo asset('img/cycproenerg-servicio4-img1.jpg'); ?>"
-            alt="Equipo de trabajo"
-          />
+            alt="Equipo de trabajo" />
         </div>
         <div class="about__image">
           <img
             src="<?php echo asset('img/cycproenerg-servicio2-img1.png'); ?>"
-            alt="Instalaciones"
-          />
+            alt="Instalaciones" />
         </div>
       </div>
 
@@ -82,14 +80,12 @@
         <div class="about__image">
           <img
             src="<?php echo asset('img/cycproenerg-servicio3-img2.png'); ?>"
-            alt="Proyectos"
-          />
+            alt="Proyectos" />
         </div>
         <div class="about__image">
           <img
             src="<?php echo asset('img/cycproenerg-servicio1-img3.png'); ?>"
-            alt="Servicios"
-          />
+            alt="Servicios" />
         </div>
       </div>
 
@@ -98,14 +94,12 @@
         <div class="about__image">
           <img
             src="<?php echo asset('img/cycproenerg-servicio2-img1.png'); ?>"
-            alt="Tecnología"
-          />
+            alt="Tecnología" />
         </div>
         <div class="about__image">
           <img
             src="<?php echo asset('img/cycproenerg-servicio3-img2.png'); ?>"
-            alt="Innovación"
-          />
+            alt="Innovación" />
         </div>
       </div>
 
@@ -136,35 +130,13 @@
   </div>
 
   <div class="services__grid">
-    <!-- Servicio 3 - Proyectos Eléctricos -->
-    <div class="service-card">
-      <div class="service-card__image">
-        <img
-          src="<?php echo asset('img/cycproenerg-servicio-03.jpg'); ?>"
-          alt="Proyectos eléctricos"
-        />
-      </div>
-      <div class="service-card__content">
-        <div class="service-card__icon">
-          <img src="<?php echo asset('img/icono3.png'); ?>" alt="Icono eléctrico" />
-        </div>
-        <h3 class="service-card__title">PROYECTOS ELÉCTRICOS</h3>
-        <p class="service-card__description">
-          Desarrollada por un staff de ingenieros experimentados, con
-          sólidos conocimientos en la materia y normativa vigente (CNE,
-          RNE, NTP).
-        </p>
-        <a href="<?php echo url('pages/content/proyectos-electricos.php'); ?>" class="service-card__link">VER MÁS</a>
-      </div>
-    </div>
 
-    <!-- Servicio 4 - Gas Natural -->
+      <!-- Servicio 1 - Gas Natural -->
     <div class="service-card">
       <div class="service-card__image">
         <img
           src="<?php echo asset('img/cycproenerg-servicio-04.jpg'); ?>"
-          alt="Gas natural"
-        />
+          alt="Gas natural" />
       </div>
       <div class="service-card__content">
         <div class="service-card__icon">
@@ -178,6 +150,56 @@
         <a href="<?php echo url('pages/content/gas-natural.php'); ?>" class="service-card__link">VER MÁS</a>
       </div>
     </div>
+
+    <!-- Servicio 2 - Servicios glp -->
+    <div class="service-card">
+      <div class="service-card__image">
+        <img
+          src="<?php echo asset('img/cycproenerg-servicio-03.jpg'); ?>"
+          alt="Proyectos eléctricos" />
+      </div>
+      <div class="service-card__content">
+        <div class="service-card__icon">
+          <img src="<?php echo asset('img/icono3.png'); ?>" alt="Icono eléctrico" />
+        </div>
+        <h3 class="service-card__title">GAS LIQUIADO DE PRETROLEO</h3>
+        <p class="service-card__description">
+          Desarrollada por un staff de ingenieros experimentados, con
+          sólidos conocimientos en la materia y normativa vigente (CNE,
+          RNE, NTP).
+        </p>
+        <a href="<?php echo url('pages/content/proyectos-electricos.php'); ?>" class="service-card__link">VER MÁS</a>
+      </div>
+    </div>
+
+    <!-- Servicio 3 - Servicios Contraincendia -->
+    <div class="service-card">
+      <div class="service-card__image">
+        <img
+          src="<?php echo asset('img/cycproenerg-servicio-03.jpg'); ?>"
+          alt="Proyectos eléctricos" />
+      </div>
+      <div class="service-card__content">
+        <div class="service-card__icon">
+          <img src="<?php echo asset('img/icono3.png'); ?>" alt="Icono eléctrico" />
+        </div>
+        <h3 class="service-card__title">SISTEMAS CONTRAINCENDIOS</h3>
+        <p class="service-card__description">
+          Desarrollada por un staff de ingenieros experimentados, con
+          sólidos conocimientos en la materia y normativa vigente (CNE,
+          RNE, NTP).
+        </p>
+        <a href="<?php echo url('pages/content/proyectos-electricos.php'); ?>" class="service-card__link">VER MÁS</a>
+      </div>
+    </div>
+
+
+
+
+
+ 
+
+
   </div>
 </section>
 

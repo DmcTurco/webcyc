@@ -1,6 +1,6 @@
 <?php
 
-include_once $_SERVER['DOCUMENT_ROOT'] . '/cycweb/config/config.php';
+include_once $_SERVER['DOCUMENT_ROOT'] . '/webcyc/config/config.php';
 $page_title = 'Proyectos Eléctricos';
 $page_description = 'Conozca más sobre los proyectos eléctricos de C&C PROENERG.';
 $additional_css = ['services/services.css'];

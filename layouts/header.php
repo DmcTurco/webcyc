@@ -26,8 +26,10 @@ if (!defined('BASE_URL')) {
       <div class="dropdown">
         <a href="<?php echo url('pages/service.php'); ?>" class="nav__link <?php echo is_active('service') ? 'active' : ''; ?>">SERVICIOS DESTACADOS</a>
         <div class="dropdown-content">
-          <a href="<?php echo url('pages/content/proyectos-electricos.php'); ?>">PROYECTOS ELECTRICOS</a>
+          <!-- <a href="<?php echo url('pages/content/proyectos-electricos.php'); ?>">PROYECTOS ELECTRICOS</a> -->
           <a href="<?php echo url('pages/content/gas-natural.php'); ?>">GAS NATURAL</a>
+          <a href="<?php echo url('pages/content/gas-natural.php'); ?>">GAS LIQUIADO DE PETROLEO</a>
+          <a href="<?php echo url('pages/content/gas-natural.php'); ?>">SISTEMAS CONTRAINCENDIOS</a>
         </div>
       </div>
       <a href="<?php echo url('pages/contact.php'); ?>" class="nav__link <?php echo is_active('contacto') ? 'active' : ''; ?>">CONTACTO</a>
